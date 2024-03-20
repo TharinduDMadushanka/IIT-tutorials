@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 lecture</title>
+</head>
+
+
+
+<body>
+
+    <p> Please enter your student username: <input type="text" name="reg" /> <br>
+        <input type="button" onclick="checkUserName(form);" value="check validity"/> 
+    </p>   
+     
+
+    <script>
+
+        function checkUserName(){
+            if(form.reg.value.length!=8){
+                alert("You have not entered an 8 character string!");
+                return false;                    
+            }else{
+                alert("This is correct!");
+                return true;
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>

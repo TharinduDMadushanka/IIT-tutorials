@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 lecture</title>
+</head>
+<body>
+
+    <h1>Registry 1</h1>
+    <form name="frm1">
+        Full name <br>
+        <input type="text" name="fname"><br>
+        Mobile <br>
+        <input type="mobile" name="mobile"><br><br>
+        <input type="button" value="Submit" onclick="validation()">
+
+    </form>
+
+    <br>
+
+
+    <h1>Registry 2</h1>
+
+    <form name="frm2">
+        Full name <br>
+        <input type="text" name="lname"><br>
+        Mobile <br>
+        <input type="mobile" name="mobile"><br><br>
+        <input type="button" value="Submit" onclick="validation()">
+
+    </form>
+    
+
+    <script>
+
+        function validation(){
+                
+            let value=document.frm2.lname.value;
+                alert(value);
+
+        }
+        validation();
+        
+
+    </script>
+    
+</body>
+</html>
